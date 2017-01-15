@@ -7,8 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B14543ED1E21167400BC10F8 /* MaterialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B14543EC1E21167400BC10F8 /* MaterialView.swift */; };
+		B16EE44B1E256F1F00C0065D /* ItemDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B16EE44A1E256F1F00C0065D /* ItemDetailsVC.swift */; };
+		B187B3451E22B02C009A184A /* ItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B187B3441E22B02C009A184A /* ItemCell.swift */; };
+		B1D406641E27F96100F6D6FC /* thumb.png in Resources */ = {isa = PBXBuildFile; fileRef = B1D406631E27F96100F6D6FC /* thumb.png */; };
 		B1E5FA4E1E20E49200A4F61B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1E5FA4D1E20E49200A4F61B /* AppDelegate.swift */; };
-		B1E5FA501E20E49200A4F61B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1E5FA4F1E20E49200A4F61B /* ViewController.swift */; };
+		B1E5FA501E20E49200A4F61B /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1E5FA4F1E20E49200A4F61B /* MainVC.swift */; };
 		B1E5FA531E20E49200A4F61B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1E5FA511E20E49200A4F61B /* Main.storyboard */; };
 		B1E5FA561E20E49200A4F61B /* DreamTaker.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B1E5FA541E20E49200A4F61B /* DreamTaker.xcdatamodeld */; };
 		B1E5FA581E20E49200A4F61B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B1E5FA571E20E49200A4F61B /* Assets.xcassets */; };
@@ -16,9 +20,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B14543EC1E21167400BC10F8 /* MaterialView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialView.swift; sourceTree = "<group>"; };
+		B16EE44A1E256F1F00C0065D /* ItemDetailsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemDetailsVC.swift; sourceTree = "<group>"; };
+		B187B3441E22B02C009A184A /* ItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemCell.swift; sourceTree = "<group>"; };
+		B1D406631E27F96100F6D6FC /* thumb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = thumb.png; sourceTree = "<group>"; };
 		B1E5FA4A1E20E49200A4F61B /* DreamTaker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DreamTaker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1E5FA4D1E20E49200A4F61B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B1E5FA4F1E20E49200A4F61B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B1E5FA4F1E20E49200A4F61B /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		B1E5FA521E20E49200A4F61B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B1E5FA551E20E49200A4F61B /* DreamTaker.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DreamTaker.xcdatamodel; sourceTree = "<group>"; };
 		B1E5FA571E20E49200A4F61B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -37,6 +45,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B14543EB1E21162700BC10F8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B14543EC1E21167400BC10F8 /* MaterialView.swift */,
+				B187B3441E22B02C009A184A /* ItemCell.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		B16EE4491E256EE900C0065D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B1E5FA4F1E20E49200A4F61B /* MainVC.swift */,
+				B16EE44A1E256F1F00C0065D /* ItemDetailsVC.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
 		B1E5FA411E20E49100A4F61B = {
 			isa = PBXGroup;
 			children = (
@@ -56,15 +82,25 @@
 		B1E5FA4C1E20E49200A4F61B /* DreamTaker */ = {
 			isa = PBXGroup;
 			children = (
+				B14543EB1E21162700BC10F8 /* View */,
+				B1E5FA721E20F2FE00A4F61B /* Model */,
 				B1E5FA4D1E20E49200A4F61B /* AppDelegate.swift */,
-				B1E5FA4F1E20E49200A4F61B /* ViewController.swift */,
+				B16EE4491E256EE900C0065D /* Controller */,
 				B1E5FA511E20E49200A4F61B /* Main.storyboard */,
+				B1D406631E27F96100F6D6FC /* thumb.png */,
 				B1E5FA571E20E49200A4F61B /* Assets.xcassets */,
 				B1E5FA591E20E49200A4F61B /* LaunchScreen.storyboard */,
 				B1E5FA5C1E20E49200A4F61B /* Info.plist */,
 				B1E5FA541E20E49200A4F61B /* DreamTaker.xcdatamodeld */,
 			);
 			path = DreamTaker;
+			sourceTree = "<group>";
+		};
+		B1E5FA721E20F2FE00A4F61B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,6 +163,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B1D406641E27F96100F6D6FC /* thumb.png in Resources */,
 				B1E5FA5B1E20E49200A4F61B /* LaunchScreen.storyboard in Resources */,
 				B1E5FA581E20E49200A4F61B /* Assets.xcassets in Resources */,
 				B1E5FA531E20E49200A4F61B /* Main.storyboard in Resources */,
@@ -140,9 +177,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B16EE44B1E256F1F00C0065D /* ItemDetailsVC.swift in Sources */,
 				B1E5FA561E20E49200A4F61B /* DreamTaker.xcdatamodeld in Sources */,
-				B1E5FA501E20E49200A4F61B /* ViewController.swift in Sources */,
+				B1E5FA501E20E49200A4F61B /* MainVC.swift in Sources */,
 				B1E5FA4E1E20E49200A4F61B /* AppDelegate.swift in Sources */,
+				B14543ED1E21167400BC10F8 /* MaterialView.swift in Sources */,
+				B187B3451E22B02C009A184A /* ItemCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -306,6 +346,7 @@
 				B1E5FA611E20E49200A4F61B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
